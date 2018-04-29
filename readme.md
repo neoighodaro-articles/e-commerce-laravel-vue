@@ -47,6 +47,9 @@ $ composer install
 
   ```$ php artisan migrate```
 
+- Install laravel passport
+
+  ```$ php artisan passport:install```
 
 - Seed Database
 
