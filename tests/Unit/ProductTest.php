@@ -96,7 +96,6 @@ class ProductTest extends TestCase
         $product = $response->getData()[0];
 
         $user = factory(\App\User::class)->create();
-        var_dump($product->id);
         $delete = $this->actingAs($user, 'api')->json('DELETE', '/api/products/'.$product->id);
         $delete->assertStatus(200);
         $delete->assertJson(['message' => "Product Deleted!"]);
