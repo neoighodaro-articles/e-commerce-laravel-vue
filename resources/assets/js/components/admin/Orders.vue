@@ -13,7 +13,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(order,index) in orders" @key="index">
+                <tr v-for="(order,index) in orders" :key="index">
                     <td>{{index+1}}</td>
                     <td v-html="order.product.name"></td>
                     <td>{{order.quantity}}</td>
