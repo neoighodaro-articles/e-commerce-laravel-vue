@@ -11,7 +11,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(product,index) in products" @key="index" @dblclick="editingItem = product">
+                <tr v-for="(product,index) in products" :key="index" @dblclick="editingItem = product">
                     <td>{{index+1}}</td>
                     <td v-html="product.name"></td>
                     <td v-model="product.units">{{product.units}}</td>
